@@ -1,2 +1,5 @@
 genfscon sysfs /touchpanel u:object_r:sysfs_touchpanel:s0
 genfscon sysfs /module/battery_saver/parameters/enabled u:object_r:sysfs_battery_saver:s0
+
+# FPS info
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps       u:object_r:sysfs_graphics:s0
