@@ -2,3 +2,6 @@ allow init bt_firmware_file:filesystem getattr;
 allow init firmware_file:filesystem getattr;
 allow init vendor_file:file execute;
 allow init adsprpcd_file:file mounton;
+
+# Allow init to write to sysfs_battery_supply
+allow init sysfs_battery_supply:file { setattr };
