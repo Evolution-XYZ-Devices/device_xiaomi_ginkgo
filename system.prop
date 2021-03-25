@@ -50,7 +50,6 @@ iorapd.readahead.enable=true
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.log_stats=true
 
 # NFC
 ro.se.type=HCE,UICC
