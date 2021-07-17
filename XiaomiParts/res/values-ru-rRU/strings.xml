@@ -46,6 +46,10 @@
 
     <!-- Display -->
     <string name="display_title">Экран</string>
+     
+     <!-- Ambient Display -->
+    <string name="ambient_display_xiaomi">Индикация событий на экране</string>
+    <string name="advanced_doze_summary">Всегда включенный экран</string>
 
     <!-- KCAL -->
     <string name="device_kcal_title">Калибровка цветов экрана</string>
