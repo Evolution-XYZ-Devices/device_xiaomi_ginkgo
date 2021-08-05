@@ -44,10 +44,6 @@ persist.vendor.ims.disableQXDMLogs=1
 # Incremental FS
 ro.incremental.enable=1
 
-# Iorap
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
-
 # LMKD
 ro.config.low_ram=false
 
