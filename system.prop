@@ -45,6 +45,10 @@ persist.vendor.ims.disableQXDMLogs=1
 iorapd.readahead.enable=true
 ro.iorapd.enable=true
 
+# Display
+persist.lcd.cabc_mode=1
+persist.lcd.hbm_mode=0
+
 # Incremental FS
 ro.incremental.enable=1
 
