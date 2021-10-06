@@ -1880,6 +1880,9 @@ vendor/lib/libqti-utils.so|1b46f423cc1c118bc8410e5cc2a1eca60893d142
 vendor/lib/libskewknob.so|a33754cdc04a0fced49e2ef357e65abbf0242206
 vendor/lib/vendor.qti.hardware.iop@1.0.so|c1ef9e7b57c78b87776d4236a35776b2b84a6741
 vendor/lib/vendor.qti.hardware.iop@2.0.so|d93690b489da65e3203080054a51f72b0b3b67ba
+vendor/lib/vendor.qti.hardware.perf@2.0.so|fc439fb036748d49b33ffe8ba91aea7f683a7671
+vendor/lib/vendor.qti.hardware.perf@2.1.so|c84885b63c7ee17c89a30fd0b8cd8e3788a0df50
+vendor/lib/vendor.qti.hardware.perf@2.2.so|6395d2d814bbd035d01528040db0b6a7b6b4573f
 vendor/lib64/libadaptlaunch.so|610d4811b6d5e2d76487a83d75ab3614985eb362
 vendor/lib64/libappclassifier.so|c7ebdc7b644fdcb58fa3acceb6d683b157114f1a
 vendor/lib64/libgameoptfeature.so|e9b0b552cc316ba80376db60bea9894ae3be4cfe
@@ -1902,6 +1905,9 @@ vendor/lib64/libreffeature.so|92ba9d649151651a1d385f2510beacb4250dd58c
 vendor/lib64/libskewknob.so|b44e11b2dec633950eb40a28b4e6be2d7a7e7da5
 vendor/lib64/vendor.qti.hardware.iop@1.0.so|07c2fd976abcde604b4b0ef07a976f5b0f900415
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|bd2cb44cc0b7243b7cabb07172a70334942a1f37
+vendor/lib64/vendor.qti.hardware.perf@2.0.so|1812e695c2179586e8742c0862109a8998ece2d8
+vendor/lib64/vendor.qti.hardware.perf@2.1.so|1512cd12e1f5b4542fa7cc9a07709c9668aa868b
+vendor/lib64/vendor.qti.hardware.perf@2.2.so|39cf96a42c6fd50773c333ed1ad5efbfa835f6ac
 
 # Peripheral manager - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/pm-proxy|6cfaaf498d9360af9d7c9e4675a1dc209454fe24
