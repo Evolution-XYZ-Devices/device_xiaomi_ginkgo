@@ -2,11 +2,10 @@
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
-persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.audio.ras.enabled=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 ro.af.client_heap_size_kbyte=7168
-ro.bluetooth.a2dp_offload.supported=true
 ro.config.media_vol_default=8
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_default=5
@@ -82,14 +81,13 @@ vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.a2dp_offload.supported=false
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
