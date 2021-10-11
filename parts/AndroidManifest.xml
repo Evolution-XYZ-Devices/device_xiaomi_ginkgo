@@ -36,7 +36,7 @@
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
-        <receiver android:name=".BootCompletedReceiver">
+         <receiver android:name=".BootCompletedReceiver" android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -46,8 +46,8 @@
         <activity
             android:name=".DeviceSettingsActivity"
             android:label="@string/device_settings_title"
-            android:icon="@drawable/ic_device_settings"
             android:exported="false"
+            android:icon="@drawable/ic_device_settings"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,6 +99,7 @@
             android:name=".display.HbmTileService"
             android:icon="@drawable/ic_hbm"
             android:label="@string/lcd_hbm_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
@@ -109,6 +110,7 @@
             android:name=".display.CabcTileService"
             android:icon="@drawable/ic_cabc"
             android:label="@string/lcd_cabc_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
