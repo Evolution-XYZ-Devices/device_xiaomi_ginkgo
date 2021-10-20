@@ -128,6 +128,10 @@ vendor.camera.vidhance.eis.enabled=1
 vendor.camera.vidhanceEis.force=1
 vendor.vidhance.video.enabled=1
 
+# Chipset
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM6125
+
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
