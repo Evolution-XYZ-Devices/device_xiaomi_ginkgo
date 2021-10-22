@@ -312,11 +312,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.1.vendor \
     android.hardware.neuralnetworks@1.0.vendor
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Parts
 #PRODUCT_PACKAGES += \
     XiaomiParts
