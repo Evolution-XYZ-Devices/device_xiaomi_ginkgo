@@ -39,9 +39,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- The CPU temperature divider, if needed -->
     <integer name="config_cpuTempDivider" translatable="false">1000</integer>
 
-    <!-- FPSInfoService FPS node file path -->
-    <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/card0/sde-crtc-0/measured_fps</string>
-
     <!-- Unify back gesture vibration with system wide haptics -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
