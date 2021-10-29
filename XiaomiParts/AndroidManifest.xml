@@ -26,13 +26,13 @@
     <application
         android:label="@string/advanced_settings"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.SubSettingsBase">
         <receiver
             android:name=".BootReceiver"
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true"
             android:enabled="true"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
@@ -44,7 +44,7 @@
 
         <activity
             android:name=".DeviceSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/advanced_settings"
             android:launchMode="singleTask">
             <intent-filter>
@@ -70,7 +70,7 @@
 
         <activity
             android:name=".kcal.KCalSettingsActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/advanced_settings_kcal">
 
             <intent-filter>
@@ -81,7 +81,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
-            android:exported="false" 
+            android:exported="true" 
             android:label="@string/clear_speaker_title">
 
             <intent-filter>
@@ -98,7 +98,7 @@
         <activity
             android:name=".display.LcdFeaturesPreferenceActivity"
             android:label="@string/lcd_features_title"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -109,6 +109,7 @@
             android:name=".display.HbmTileService"
             android:icon="@drawable/ic_hbm"
             android:label="@string/lcd_hbm_tile_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
@@ -119,6 +120,7 @@
             android:name=".display.CabcTileService"
             android:icon="@drawable/ic_cabc"
             android:label="@string/lcd_cabc_title"
+            android:exported="true"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>

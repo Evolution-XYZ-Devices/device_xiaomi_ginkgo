@@ -23,6 +23,8 @@ import android.os.SystemProperties;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
+import android.app.ActionBar;
+import android.app.Activity;
 
 import org.lineageos.settings.device.R;
 
@@ -41,7 +43,10 @@ public class LcdFeaturesPreferenceFragment extends PreferenceFragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
+        final ActionBar actionBar = getActivity().getActionBar();
+                if (actionBar != null) {
+                    actionBar.setDisplayHomeAsUpEnabled(true);
+                }
     }
 
     @Override

@@ -17,16 +17,10 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Label for feature switch [CHAR LIMIT=30] -->
-  <string name="switch_bar_on">Включено</string>
-  <!-- Label for feature switch [CHAR LIMIT=30] -->
-  <string name="switch_bar_off">Выключено</string>
   <!-- Device specific settings -->
   <string name="device_settings_app_name">Дополнительные настройки</string>
   <!-- Ambient Display -->
   <string name="ambient_display_title">Индикация событий</string>
-  <!-- Tilt sensor -->
-  <string name="tilt_sensor_title">Датчик наклона</string>
   <!-- Proximity sensor -->
   <string name="proximity_sensor_title">Датчик приближения</string>
   <!-- Hand wave gesture -->
