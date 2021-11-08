@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2018 The Xiaomi-SDM660 Project
-
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
           http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -102,4 +99,12 @@
     <string name="edit_value">Выбрати нове значення</string>
     <string name="default_value">Стандартне значення</string>
     <string name="edit_hint">Значення між %1$d і %2$d</string>
+	
+	<!-- LCD Features -->
+    <string name="lcd_features_title">Налаштування ЖК-дисплея</string>
+    <string name="lcd_features_summary">Режим підвищеної яскравості, контентне регулювання</string>
+    <string name="lcd_hbm_title">Режим підвищенної яскравості</string>
+    <string name="lcd_hbm_tile_title">Підвищити яскравість</string>
+    <string name="lcd_cabc_title">Контентне регулювання</string>
+    <string name="lcd_features_info">Режим підвищеної яскравості збільшує максимальну яскравість дисплея для поліпшення видимості при сонячному світлі. Збільшує електроспоживання. Може призвести до нагрівання дисплея.\n\nКонтентне регулювання регулює яскравість дисплея і кольорів в залежності від поточного вмісту, щоб знизити електроспоживання без погіршення якості зображення.</string>
 </resources>
