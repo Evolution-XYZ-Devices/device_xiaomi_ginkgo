@@ -62,7 +62,6 @@ TARGET_NEEDS_RAW10_BUFFER_FIX := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
-TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_USES_DRM_PP := true
 TARGET_USES_HWC2 := true
@@ -97,9 +96,6 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_WILLOW_FILES := $(DEVICE_PATH)/configs/hidl/manifest_willow.xml
 ODM_MANIFEST_SKUS += willow
-
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_ginkgo

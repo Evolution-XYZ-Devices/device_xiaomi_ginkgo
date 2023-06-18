@@ -847,17 +847,7 @@
 
     <!-- If this is true, device supports Sustained Performance Mode. -->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
-
-    <!-- Determines whether the shell features all run on another thread. -->
-    <bool name="config_enableShellMainThread">true</bool>
-
-    <!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds.  Do not translate.
-
-     NOTE: The naming convention is "config_camelCaseValue". Some legacy
-     entries do not follow the convention, but all new entries should. -->
-
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
     <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
@@ -871,9 +861,6 @@
 
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
-
-    <!-- Whether to Enable Smart Charging -->
-    <bool name="config_smartChargingAvailable">true</bool>
 
     <!-- Smart charging -->
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
