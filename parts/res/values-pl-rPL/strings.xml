@@ -67,7 +67,7 @@
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Wyczyść głośnik</string>
-    <string name="clear_speaker_summary">Odtwarza 30-sekundowy dźwięk, aby wyczyścić głośnik</string>
+    <string name="clear_speaker_summary">Odtwarza 60-sekundowy dźwięk, aby wyczyścić głośnik</string>
     <string name="clear_speaker_description">Uruchom to narzędzie raz lub dwa razy, jeśli Twój głośnik jest zablokowany przez kurz bądź pył. Ustaw maksymalną głośność.\n\nJeśli głośnik jest zablokowany mocniej, uruchom to narzędzie od 2 do 5 razy, potrząsając urządzeniem z głośnikiem skierowanym w dół.</string>
 
     <!-- Kcal settings -->

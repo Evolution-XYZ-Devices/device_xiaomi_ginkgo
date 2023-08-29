@@ -69,7 +69,7 @@
 
     <!-- Clear Speaker -->
     <string name="clear_speaker_title">Pembersih speaker</string>
-    <string name="clear_speaker_summary">Putar audio 30-detik untuk membersihkan speaker</string>
+    <string name="clear_speaker_summary">Putar audio 60-detik untuk membersihkan speaker</string>
     <string name="clear_speaker_description">Jalankan fitur ini satu atau dua kali jika speaker anda sedikit terhalang oleh debu. Atur volume media ke maksimum.\n\nJika speaker sangat terhalang, jalankan fitur ini 2-5 kali sambil menggoyangkan perangkat anda dengan speaker menghadap ke bawah.</string>
     
     <!-- Kcal settings -->

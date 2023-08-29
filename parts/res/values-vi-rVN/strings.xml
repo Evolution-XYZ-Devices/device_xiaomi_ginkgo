@@ -69,7 +69,7 @@
 	
 <!-- Clear Speaker -->
     <string name="clear_speaker_title">Làm sạch loa</string>
-    <string name="clear_speaker_summary">Phát âm thanh 30s để làm sạch loa</string>
+    <string name="clear_speaker_summary">Phát âm thanh 60s để làm sạch loa</string>
     <string name="clear_speaker_description">Bật tùy chọn này 1-2 lần nếu loa hơi bẩn. Đồng thời đặt âm lượng ở mức tối đa.\n\nNếu loa quá bẩn, hãy chạy tùy chọn này 2-5 lần và lắc điện thoại.Điện thoại nên hướng xuống</string>
 	
 <!-- Kcal settings -->

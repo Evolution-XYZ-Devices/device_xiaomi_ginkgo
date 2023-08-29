@@ -69,7 +69,7 @@
 
      <!-- Clear Speaker -->
     <string name="clear_speaker_title">Очистка динаміка</string>
-    <string name="clear_speaker_summary">Відтворити 30-ти секундний звук для очистки динаміка</string>
+    <string name="clear_speaker_summary">Відтворити 60-ти секундний звук для очистки динаміка</string>
     <string name="clear_speaker_description">Включить цей параметр 1-2 рази, якщо динамік трохи забитий. Також поставте звук на максимальну гучність.\n\nЯкщо динамік сильно забитий, запустіть цю процедуру 2-5 разів и потрясіть телефоном. Динамік повинен бути направленим вниз</string>
     
     <!-- Kcal settings -->
