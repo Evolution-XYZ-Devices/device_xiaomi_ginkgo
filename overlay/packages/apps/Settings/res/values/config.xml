@@ -26,9 +26,6 @@
         <item>-1</item>
     </integer-array>
 
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
-
     <!-- Battery health -->
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>

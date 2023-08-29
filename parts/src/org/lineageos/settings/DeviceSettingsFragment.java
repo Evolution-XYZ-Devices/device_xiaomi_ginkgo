@@ -32,7 +32,6 @@ import org.lineageos.settings.R;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalSettingsActivity;
 import org.lineageos.settings.display.LcdFeaturesPreferenceActivity;
-import org.lineageos.settings.doze.DozeSettingsActivity;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
 import org.lineageos.settings.utils.VibrationUtils;
 
@@ -45,7 +44,6 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private static final String PREF_KCAL_SETTINGS = "kcal_settings";
     private static final String PREF_LCD_FEATURES = "lcd_features_settings";
-    private static final String PREF_DOZE_SETTINGS = "doze_settings";
     private static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
 
     private SwitchPreference mDiracPref;
@@ -56,7 +54,6 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     private Preference mKcalSettingsPref;
     private Preference mLcdFeaturesPref;
     private Preference mClearSpeakerPref;
-    private Preference mDozeSettingsPref;
 
     private SeekBarPreference mVibStrengthPref;
 
@@ -101,13 +98,6 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
         mLcdFeaturesPref = (Preference) findPreference(PREF_LCD_FEATURES);
         mLcdFeaturesPref.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), LcdFeaturesPreferenceActivity.class);
-            startActivity(intent);
-            return true;
-        });
-
-        mDozeSettingsPref = (Preference) findPreference(PREF_DOZE_SETTINGS);
-        mDozeSettingsPref.setOnPreferenceClickListener(preference -> {
-            Intent intent = new Intent(getActivity().getApplicationContext(), DozeSettingsActivity.class);
             startActivity(intent);
             return true;
         });
