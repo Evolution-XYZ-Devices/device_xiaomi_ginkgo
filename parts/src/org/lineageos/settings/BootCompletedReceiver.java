@@ -25,7 +25,6 @@ import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalUtils;
 import org.lineageos.settings.utils.VibrationUtils;
 
@@ -39,8 +38,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         if (DEBUG)
             Log.d(TAG, "Received boot completed intent");
-
-        new DiracUtils(context).onBootCompleted();
 
         if (KcalUtils.isKcalSupported())
             KcalUtils.writeCurrentSettings(sharedPrefs);

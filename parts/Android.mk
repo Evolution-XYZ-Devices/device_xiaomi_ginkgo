@@ -26,6 +26,4 @@ LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res \
     $(TOP)/packages/resources/devicesettings/res
 
-LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-
 include $(BUILD_PACKAGE)

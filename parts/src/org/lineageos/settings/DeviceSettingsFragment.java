@@ -29,7 +29,6 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 
 import org.lineageos.settings.R;
-import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.display.KcalSettingsActivity;
 import org.lineageos.settings.display.LcdFeaturesPreferenceActivity;
 import org.lineageos.settings.speaker.ClearSpeakerActivity;
@@ -38,18 +37,10 @@ import org.lineageos.settings.utils.VibrationUtils;
 public class DeviceSettingsFragment extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-    private static final String PREF_DIRAC = "dirac_pref";
-    private static final String PREF_HEADSET = "dirac_headset_pref";
-    private static final String PREF_PRESET = "dirac_preset_pref";
     private static final String PREF_CLEAR_SPEAKER = "clear_speaker_settings";
     private static final String PREF_KCAL_SETTINGS = "kcal_settings";
     private static final String PREF_LCD_FEATURES = "lcd_features_settings";
     private static final String PREF_VIBRATION_STRENGTH = "vibration_strength";
-
-    private SwitchPreference mDiracPref;
-
-    private ListPreference mHeadsetPref;
-    private ListPreference mPresetPref;
 
     private Preference mKcalSettingsPref;
     private Preference mLcdFeaturesPref;
@@ -57,29 +48,12 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
 
     private SeekBarPreference mVibStrengthPref;
 
-    private DiracUtils mDiracUtils;
 
     private Vibrator mVibrator;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.device_settings);
-
-        mDiracUtils = new DiracUtils(getContext());
-
-        boolean enhancerEnabled = mDiracUtils.isDiracEnabled();
-
-        mDiracPref = (SwitchPreference) findPreference(PREF_DIRAC);
-        mDiracPref.setOnPreferenceChangeListener(this);
-        mDiracPref.setChecked(enhancerEnabled);
-
-        mHeadsetPref = (ListPreference) findPreference(PREF_HEADSET);
-        mHeadsetPref.setOnPreferenceChangeListener(this);
-        mHeadsetPref.setEnabled(enhancerEnabled);
-
-        mPresetPref = (ListPreference) findPreference(PREF_PRESET);
-        mPresetPref.setOnPreferenceChangeListener(this);
-        mPresetPref.setEnabled(enhancerEnabled);
 
         mClearSpeakerPref = (Preference) findPreference(PREF_CLEAR_SPEAKER);
         mClearSpeakerPref.setOnPreferenceClickListener(preference -> {
@@ -119,16 +93,6 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         switch (preference.getKey()) {
-            case PREF_DIRAC:
-                mDiracUtils.setEnabled((boolean) newValue);
-                setDiracEnabled((boolean) newValue);
-                return true;
-            case PREF_HEADSET:
-                mDiracUtils.setHeadsetType(Integer.parseInt(newValue.toString()));
-                return true;
-            case PREF_PRESET:
-                mDiracUtils.setLevel(String.valueOf(newValue));
-                return true;
             case PREF_VIBRATION_STRENGTH:
                 mVibStrengthPref.setSummary(String.valueOf(newValue) + "%");
                 VibrationUtils.setVibStrength((int) newValue);
@@ -137,13 +101,7 @@ public class DeviceSettingsFragment extends PreferenceFragment implements
                 }
                 return true;
             default:
-                return false;
-        }
-    }
-
-    private void setDiracEnabled(boolean enabled) {
-        mDiracPref.setChecked(enabled);
-        mHeadsetPref.setEnabled(enabled);
-        mPresetPref.setEnabled(enabled);
-    }
+                return false;                                                                                           
+        }                                                                                                               
+    }                                                                                                                   
 }
