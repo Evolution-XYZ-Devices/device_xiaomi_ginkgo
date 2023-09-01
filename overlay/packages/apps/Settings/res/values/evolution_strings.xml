@@ -14,6 +14,6 @@
 
     <!-- ROM maintainer name -->
     <string name="build_maintainer_summary">Tejas</string>
-    <string name="build_maintainer_telegram">https://t.me/I_Am_Charsi</string>
+    <string name="build_maintainer_donate_url">https://paypal.me/tejas101k</string>
 
 </resources>
