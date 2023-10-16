@@ -1515,6 +1515,9 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# Protobuf - from redfin - TQ3A.230901.001/10750268
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|4f4ad5b013daabbbfbf7be7419fb60c28a59c36c
+
 # DSP - from LA.UM.9.11.r1-04500-NICOBAR.0
 vendor/bin/dspservice|d4e262b312a40ca275a6e6c9eefdab2d81da2f21
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
