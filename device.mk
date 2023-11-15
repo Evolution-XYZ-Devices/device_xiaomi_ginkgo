@@ -362,7 +362,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-full \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
     librmnetctl
 
 PRODUCT_PACKAGES += \
