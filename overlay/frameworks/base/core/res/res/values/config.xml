@@ -862,6 +862,9 @@
     <bool name="config_pocketModeSupported">true</bool>
     <bool name="config_pocketUseLightSensor">true</bool>
 
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">false</bool>
+
     <!-- LiveDisplay -->
     <bool name="config_enableLiveDisplay">false</bool>
 
