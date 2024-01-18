@@ -734,7 +734,7 @@
     </string-array>
 
     <!-- True if home app should be pinned via Pinner Service -->
-    <bool name="config_pinnerHomeApp">false</bool>
+    <bool name="config_pinnerHomeApp">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
