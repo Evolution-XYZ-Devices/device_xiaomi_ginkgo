@@ -1,0 +1,18 @@
+[
+   {
+     "repository": "tejas101k/Cuh-Kernel",
+     "target_path": "kernel/xiaomi/ginkgo",
+     "remote": "github"
+   },
+   {
+     "repository": "vendor_xiaomi_ginkgo",
+     "target_path": "vendor/xiaomi/ginkgo",
+     "branch": "udc",
+     "remote": "evo-devices"
+   },
+   {
+     "repository": "tejas101k/vendor_miuicamera",
+     "target_path": "vendor/miuicamera",
+     "remote": "gitlab"
+   }
+]

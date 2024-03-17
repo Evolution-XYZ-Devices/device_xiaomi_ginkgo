@@ -9,3 +9,6 @@ type vendor_fp_prop, property_type;
 
 # Power HAL
 type vendor_power_prop, property_type;
+
+# Aware
+vendor_restricted_prop(vendor_aware_available_prop);

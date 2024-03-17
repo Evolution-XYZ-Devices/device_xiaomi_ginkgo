@@ -1,3 +1,6 @@
+# Aware
+ro.vendor.aware_available          u:object_r:vendor_aware_available_prop:s0
+
 # Camera
 persist.camera.             u:object_r:vendor_camera_prop:s0
 camera.                     u:object_r:vendor_camera_prop:s0
@@ -24,3 +27,7 @@ sys.vendor.fp.              u:object_r:vendor_fp_prop:s0
 
 # Power HAL
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
+
+# Radio
+ro.vendor.ril.svlte1x                           u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                              u:object_r:vendor_radio_prop:s0

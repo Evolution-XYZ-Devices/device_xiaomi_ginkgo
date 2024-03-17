@@ -21,12 +21,33 @@
      entries do not follow the convention, but all new entries should. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">false</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
+    <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Do the battery/notification LEDs support pulsing?
          Used to decide if we show pulse settings -->
-    <bool name="config_ledCanPulse">false</bool>
+    <bool name="config_ledCanPulse">true</bool>
 
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">true</bool>
+
+    <!-- LiveDisplay -->
+    <bool name="config_enableLiveDisplay">false</bool>
+
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
+
+    <!-- Whether the device supports Smart Pixels -->
+    <bool name="config_supportSmartPixels">false</bool>
+
+    <!-- Statusbar Burn-in protection -->
+    <bool name="config_enableBurnInProtection">false</bool>
 </resources>
