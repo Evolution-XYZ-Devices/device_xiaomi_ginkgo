@@ -27,9 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
